@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitzy - Split Expenses with Friends</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="flex min-h-screen flex-col">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="/" class="logo">Splitzy</a>
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="#create-session">Create Session</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="gradient-heading">Split Expenses with Friends</h1>
+                        <p class="hero-description">Splitzy makes it easy to track and split expenses with friends, family, or roommates.</p>
+                        <div class="hero-actions">
+                            <a href="#create-session" class="button button-primary">Create a Session</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Create Session Section -->
+            <section id="create-session" class="create-session-section">
+                <div class="container">
+                    <div class="create-session-grid">
+                        <div class="create-session-info">
+                            <h2 class="gradient-heading">Create a New Session</h2>
+                            <p>Start tracking expenses by creating a new session. Share the link with friends to collaborate.</p>
+                        </div>
+                        <div class="create-session-form-container">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">New Expense Session</h3>
+                                    <p class="card-description">Create a new session to start tracking expenses.</p>
+                                </div>
+                                <div class="card-content">
+                                    <form id="session-form" class="session-form">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Trip to Paris" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="description">Description (Optional)</label>
+                                            <textarea id="description" name="description" placeholder="Add details about this expense tracking session"></textarea>
+                                        </div>
+                                        <button type="submit" class="button button-primary button-full">Create Session</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How It Works Section -->
+            <section class="how-it-works-section">
+                <div class="container">
+                    <div class="how-it-works-grid">
+                        <div class="how-it-works-info">
+                            <h2 class="gradient-heading">How It Works</h2>
+                            <p>Splitzy makes expense tracking and settlement simple.</p>
+                            <ul class="steps-list">
+                                <li class="step-item">
+                                    <div class="step-number">1</div>
+                                    <span>Create a session and share the link with friends</span>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-number">2</div>
+                                    <span>Add expenses and specify who participated</span>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-number">3</div>
+                                    <span>Track settlements and see who owes whom</span>
+                                </li>
+                                <li class="step-item">
+                                    <div class="step-number">4</div>
+                                    <span>Visualize expenses with charts and export data</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">$</div>
+                                <h3>Track Expenses</h3>
+                                <p>Record who paid for what and how it should be split.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">👥</div>
+                                <h3>Manage Users</h3>
+                                <p>Add and manage users in your expense session.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📊</div>
+                                <h3>Visualize Data</h3>
+                                <p>See charts of expenses by category and payer.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">⬇️</div>
+                                <h3>Export Data</h3>
+                                <p>Export balances and transactions to CSV.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>© <span id="current-year"></span> Splitzy. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
